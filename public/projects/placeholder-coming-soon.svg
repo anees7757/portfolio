@@ -1,0 +1,17 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <rect width="24" height="24" fill="#0b0f12" />
+      <circle cx="12" cy="12" r="1" fill="#0f1720" />
+    </pattern>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#071116"/>
+      <stop offset="100%" stop-color="#0b1720"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#dots)"/>
+  <rect x="0" y="0" width="1200" height="800" fill="url(#grad)" opacity="0.6"/>
+  <g transform="translate(0,0)">
+    <text x="600" y="380" text-anchor="middle" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="32" letter-spacing="4">PREVIEW COMING SOON</text>
+  </g>
+</svg>
