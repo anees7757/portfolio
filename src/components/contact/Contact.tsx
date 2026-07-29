@@ -14,14 +14,14 @@ const contactInfo = [
   },
   {
     icon: <Mail size={16} />,
-    label: "GitHub",
-    value: "@anees7757",
-    href: "https://github.com/anees7757",
+    label: "Email",
+    value: "anees7757@gmail.com",
+    href: "mailto:anees7757@gmail.com",
   },
   {
     icon: <MapPin size={16} />,
     label: "Location",
-    value: "Pakistan",
+    value: "Rawalpindi, Pakistan",
   },
 ];
 

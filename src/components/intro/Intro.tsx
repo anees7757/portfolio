@@ -10,7 +10,7 @@ type Phase = "show" | "exit" | "hidden";
 /** Minimum time on screen, so the animation always plays rather than blinking. */
 const MIN_VISIBLE_MS = 1900;
 /** Hard cap, so a WebGL failure can never trap the page behind the overlay. */
-const MAX_VISIBLE_MS = 6000;
+const MAX_VISIBLE_MS = 3000;
 /** Matches the panel slide duration below. */
 const EXIT_MS = 1100;
 

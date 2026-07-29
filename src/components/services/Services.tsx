@@ -8,7 +8,7 @@ const services = [
   {
     number: "01",
     icon: <Smartphone className="h-6 w-6" />,
-    title: "Flutter App Development",
+    title: "App Development",
     description:
       "Designing and shipping polished mobile apps with Flutter and Dart for Android and iOS.",
     tags: ["Flutter", "Dart", "Mobile UI"],
@@ -16,18 +16,18 @@ const services = [
   {
     number: "02",
     icon: <Code className="h-6 w-6" />,
-    title: "Web & Product Development",
+    title: "Web Development",
     description:
       "Building responsive web experiences and product interfaces with modern frontend tools.",
-    tags: ["Next.js", "React", "Tailwind"],
+    tags: ["Flutter", "Jasper"],
   },
   {
     number: "03",
     icon: <Cpu className="h-6 w-6" />,
-    title: "API & Backend Integration",
+    title: "API Development",
     description:
       "Connecting apps to dependable services and APIs so products feel smooth and data-driven.",
-    tags: ["REST", "Python", "APIs"],
+    tags: ["REST", "Flask", "Dart", "Node"],
   },
   {
     number: "04",
@@ -35,7 +35,7 @@ const services = [
     title: "AI & Automation",
     description:
       "Bringing AI, machine learning, and automation ideas into practical, useful workflows.",
-    tags: ["AI", "ML", "Automation"],
+    tags: ["AI Integrations", "ML Kit", "YoloV8", "n8n"],
   },
 ];
 

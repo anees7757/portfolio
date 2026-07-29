@@ -20,8 +20,8 @@ interface Review {
 // default — enable it by uncommenting <Reviews /> in src/app/page.tsx.
 const reviews: Review[] = [
     {
-        name: 'Client Name',
-        position: 'Role, Company',
+        name: 'Muhammad Fahad',
+        position: 'CEO, Softeam Technologies',
         rating: 5,
         review: 'A short quote from a client or colleague about working with you.',
     },

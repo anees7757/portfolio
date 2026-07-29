@@ -9,6 +9,9 @@ import {
   Linkedin,
   Facebook,
   ChevronDown,
+  FacebookIcon,
+  LucideFacebook,
+  MessageCircle,
 } from "lucide-react";
 import Link from "next/link";
 
