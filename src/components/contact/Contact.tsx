@@ -5,18 +5,24 @@ import { Button } from "@/components/ui/button";
 import { FloatingLabelInput } from "../labelInput/LabelInput";
 import { motion } from "framer-motion";
 
+const PUBLIC_EMAIL = process.env.NEXT_PUBLIC_EMAIL_USER || "anees7757@gmail.com";
+const PUBLIC_PHONE = process.env.NEXT_PUBLIC_PHONE || "+92 340 519 7763";
+
+// tel href should not contain spaces
+const PUBLIC_PHONE_HREF = (process.env.NEXT_PUBLIC_PHONE || "+923405197763").replace(/\s+/g, "");
+
 const contactInfo = [
   {
     icon: <PhoneCall size={16} />,
     label: "Phone",
-    value: "+92 340 519 7763",
-    href: "tel:+923405197763",
+    value: PUBLIC_PHONE,
+    href: `tel:${PUBLIC_PHONE_HREF}`,
   },
   {
     icon: <Mail size={16} />,
     label: "Email",
-    value: "anees7757@gmail.com",
-    href: "mailto:anees7757@gmail.com",
+    value: PUBLIC_EMAIL,
+    href: `mailto:${PUBLIC_EMAIL}`,
   },
   {
     icon: <MapPin size={16} />,
