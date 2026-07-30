@@ -56,7 +56,7 @@ const infoData = [
     text: PUBLIC_EMAIL,
     href: `mailto:${PUBLIC_EMAIL}`,
   },
-  { icon: <MapPin size={20} />, text: "Rawalpindi,Pakistan", href: undefined },
+  { icon: <MapPin size={20} />, text: "Rawalpindi, Pakistan", href: undefined },
 ];
 
 const skills = [
