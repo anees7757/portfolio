@@ -40,19 +40,23 @@ const MaskIcon = ({ src, label }: { src: string; label: string }) => (
   />
 );
 
+const PUBLIC_EMAIL = process.env.NEXT_PUBLIC_EMAIL_USER || "anees7757@gmail.com";
+const PUBLIC_PHONE = process.env.NEXT_PUBLIC_PHONE || "+92 340 519 7763";
+const PUBLIC_PHONE_HREF = (process.env.NEXT_PUBLIC_PHONE || "+923405197763").replace(/\s+/g, "");
+
 const infoData = [
   { icon: <User2 size={20} />, text: "Muhammad Anees" },
   {
     icon: <PhoneCall size={20} />,
-    text: "+92 340 519 7763",
-    href: "tel:+923405197763",
+    text: PUBLIC_PHONE,
+    href: `tel:${PUBLIC_PHONE_HREF}`,
   },
   {
     icon: <MailIcon size={20} />,
-    text: "anees7757@gmail.com",
-    href: "mailto:anees7757@gmail.com",
+    text: PUBLIC_EMAIL,
+    href: `mailto:${PUBLIC_EMAIL}`,
   },
-  { icon: <MapPin size={20} />, text: "Pakistan", href: undefined },
+  { icon: <MapPin size={20} />, text: "Rawalpindi,Pakistan", href: undefined },
 ];
 
 const skills = [
