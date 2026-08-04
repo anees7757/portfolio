@@ -64,7 +64,7 @@ const skills = [
   { name: "Python", icon: <Code size={20} />, category: "Backend / AI" },
   { name: "AI / ML", icon: <Sparkles size={20} />, category: "Innovation" },
   { name: "Mobile App Development", icon: <Zap size={20} />, category: "Product" },
-  { name: "Web Experiences", icon: <Code2 size={20} />, category: "Frontend" },
+  { name: "Web Development", icon: <Code2 size={20} />, category: "Frontend" },
   { name: "Automation", icon: <Workflow size={20} />, category: "Workflow" },
 ];
 
@@ -72,9 +72,12 @@ const tools = [
   { name: "Git", svg: "/svgs/git.svg" },
   { name: "Visual Studio Code", svg: "/svgs/visualstudio.svg" },
   { name: "Postman", svg: "/svgs/postman.svg" },
-  { name: "Slack", svg: "/svgs/slack.svg" },
-  { name: "GitHub", svg: "/svgs/github.svg" },
   { name: "Pycharm", svg: "/svgs/pycharm.svg" },
+  { name: "Xcode", svg: "/svgs/xcode.png" },
+  { name: "Android Studio", svg: "/svgs/android-studio.svg" },
+  { name: "Antigravity", svg: "/svgs/antigravity.svg" },
+  { name: "Shorebird", svg: "/svgs/shorebird.png" },
+  { name: "Figma", svg: "/svgs/figma.svg" },
 ];
 
 const experiences = [

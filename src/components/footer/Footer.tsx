@@ -27,7 +27,7 @@ const Footer = () => {
             <span className="w-1.5 h-1.5 rounded-full ml-0.5 -mt-3 inline-block" style={{ backgroundColor: "hsl(138 32% 60%)" }} />
           </div>
 
-          <nav className="flex flex-wrap justify-center gap-6">
+          {/* <nav className="flex flex-wrap justify-center gap-6">
             {footerLinks.map((link) => (
               <Link
                 key={link.href}
@@ -37,7 +37,7 @@ const Footer = () => {
                 {link.label}
               </Link>
             ))}
-          </nav>
+          </nav> */}
 
           <p className="text-xs text-muted-foreground">
             &copy; {year || "2026"} Muhammad Anees
