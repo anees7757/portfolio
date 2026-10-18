@@ -4,12 +4,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import {
   ArrowLeft,
-  ArrowRight,
   Github,
   ExternalLink,
+  Apple,
   Calendar,
   Clock,
-  User,
   Tag,
   X,
   ChevronLeft,
@@ -23,6 +22,42 @@ import projects from "../../../../public/data/projects";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 
+const GooglePlayIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
+  <svg
+    role="img"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className={className}
+    aria-hidden="true"
+  >
+    <path d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z" />
+  </svg>
+);
+
+const getLiveLinkDetails = (url: string) => {
+  const lower = url.toLowerCase();
+  if (lower.includes("play.google.com") || lower.includes("market://")) {
+    return {
+      label: "Google Play",
+      icon: <GooglePlayIcon className="mr-2 h-4 w-4" />,
+    };
+  }
+  if (
+    lower.includes("apps.apple.com") ||
+    lower.includes("itunes.apple.com") ||
+    lower.includes("apple.com")
+  ) {
+    return {
+      label: "App Store",
+      icon: <Apple className="mr-2 h-4 w-4" />,
+    };
+  }
+  return {
+    label: "View Live",
+    icon: <ExternalLink className="mr-2 h-4 w-4" />,
+  };
+};
+
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
   animate: { opacity: 1, y: 0 },
@@ -31,7 +66,9 @@ const fadeInUp = {
 
 export default function ProjectPage() {
   const { id } = useParams();
-  const project = projects.find((p) => p.id === id);
+  const project = projects.find(
+    (p) => p.id === id || (p.id === "mishkaat" && id === "sirat-ul-mustaqeem")
+  );
 
   if (!project) {
     notFound();
@@ -58,7 +95,8 @@ export default function ProjectPage() {
     };
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
-  }, [lightboxOpen, currentImage]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [lightboxOpen]);
 
   const nextImage = () => {
     setCurrentImage((prev) => (prev + 1) % project.images.length);
@@ -135,7 +173,8 @@ export default function ProjectPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <ExternalLink className="mr-2 h-4 w-4" /> View Live
+                    {getLiveLinkDetails(project.liveLink).icon}
+                    {getLiveLinkDetails(project.liveLink).label}
                   </a>
                 </Button>
               )}

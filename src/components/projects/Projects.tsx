@@ -44,7 +44,7 @@ export default function Projects() {
                             Recent Projects
                         </motion.h2>
                         <p className="text-muted-foreground mb-8">
-                            A few things I&apos;ve built recently: mobile apps, dashboards, and AI-driven tools, mostly for real clients.
+                            A few things I&apos;ve built recently: mobile apps and AI-driven tools, mostly for real clients.
                         </p>
                         <div className="w-full h-px bg-border mb-8"></div>
                         <div className="flex items-center justify-center lg:justify-start gap-8">
@@ -55,34 +55,34 @@ export default function Projects() {
                                 </Button>
                             </Link>
                             <div className="flex gap-2">
-                                <button 
+                                <button
                                     onClick={slidePrev}
                                     disabled={isBeginning}
                                     type="button"
                                     aria-label="Previous projects"
                                     className="flex h-11 w-11 items-center justify-center rounded-full border border-border text-foreground transition-colors hover:border-brand hover:text-brand disabled:pointer-events-none disabled:opacity-40">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-left h-5 w-5">
-                                            <path d="m15 18-6-6 6-6"></path>
-                                        </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-left h-5 w-5">
+                                        <path d="m15 18-6-6 6-6"></path>
+                                    </svg>
                                 </button>
-                                <button 
-                                     onClick={slideNext}
+                                <button
+                                    onClick={slideNext}
                                     disabled={isEnd}
                                     type="button"
                                     aria-label="Next projects"
                                     className="flex h-11 w-11 items-center justify-center rounded-full border border-border text-foreground transition-colors hover:border-brand hover:text-brand disabled:pointer-events-none disabled:opacity-40">
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor" 
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="lucide lucide-chevron-left h-5 w-5">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        strokeWidth="2"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        className="lucide lucide-chevron-left h-5 w-5">
                                         <path d="m9 18 6-6-6-6"></path>
-                                    </svg>   
+                                    </svg>
                                 </button>
                             </div>
                         </div>

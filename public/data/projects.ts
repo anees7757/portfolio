@@ -24,6 +24,44 @@
 
 const projects = [
   {
+    id: "mishkaat",
+    title: "Mishkaat",
+    description:
+      "A premium, offline-first Islamic companion app designed to provide a seamless spiritual experience. It offers a comprehensive suite of tools for Quranic study, daily worship, and lifestyle discipline, all within a beautiful and distraction-free interface.",
+    shortDescription:
+      "A premium, offline-first Islamic companion app for Quranic study, prayer discipline, and daily worship.",
+    tags: [
+      "Flutter",
+      "Dart",
+      "Mobile App",
+      "Offline-First",
+      "Audio Recitation",
+      "UI/UX",
+    ],
+    image: "/projects/mishkaat-cover.png",
+    images: [
+      "/projects/mishkaat-1.png",
+      "/projects/mishkaat-2.png",
+      "/projects/mishkaat-3.png",
+      "/projects/mishkaat-4.png",
+      "/projects/mishkaat-5.png",
+    ],
+    githubLink: "",
+    liveLink: "https://play.google.com/store/apps/details?id=com.akhrot.mishkaat",
+    category: "Mobile App",
+    features: [
+      "Al-Quran Al-Kareem: Dual reading modes (Mushaf & verse-by-verse list), dynamic font controls, display toggles, and high-fidelity offline audio recitations with Tarteel sync.",
+      "Prayer & Spiritual Discipline: Smart location-based prayer times with alerts, real-time Qibla compass, mosque finder, and dedicated excused days logging for sisters.",
+      "Gamified Growth & Analytics: Milestone tracking and badges for daily streaks, Surah completions, and worship targets with visual progress charts.",
+      "Daily Worship Tools: Interactive Tasbeeh counter with haptic feedback, curated morning/evening Adhkar, Asma-ul-Husna (99 Names of Allah), and authentic Hadith library.",
+      "Essential Islamic Utilities: Built-in Zakat calculator, Halal barcode & QR product scanner, and Hijri calendar with moon phases.",
+    ],
+    date: "Sep 2026",
+    duration: "Ongoing",
+    client: "Personal project",
+    role: "Flutter Developer",
+  },
+  {
     id: "industrial-watch",
     title: "Industrial Watch",
     description:
@@ -80,29 +118,6 @@ const projects = [
     role: "Flutter Developer",
   },
   {
-    id: "sirat-ul-mustaqeem",
-    title: "Sirat-ul-Mustaqeem",
-    description:
-      "A rich Islamic app designed to make spiritual learning and daily guidance more engaging, accessible, and user-friendly.",
-    shortDescription:
-      "A comprehensive Islamic app with a smooth and user-friendly experience.",
-    tags: ["Flutter", "UI/UX", "Mobile App"],
-    image: "/projects/sirat-ul-mustaqeem-cover.png",
-    images: ["/projects/sirat-ul-mustaqeem-cover.png"],
-    githubLink: "https://github.com/anees7757/sirat-ul-mustaqeem",
-    liveLink: "",
-    category: "Mobile App",
-    features: [
-      "Delivered a polished app experience for spiritual content and guidance",
-      "Focused on intuitive navigation and content accessibility",
-      "Built for an engaging and seamless daily-use experience",
-    ],
-    date: "2023",
-    duration: "3 months",
-    client: "Personal project",
-    role: "Flutter Developer",
-  },
-  {
     id: "scrabble-multiplayer",
     title: "Scrabble Multiplayer",
     description:
@@ -149,7 +164,7 @@ const projects = [
     client: "Personal project",
     role: "Flutter Developer",
   },
-  
+
   {
     id: "car-rental",
     title: "Car Rental",
